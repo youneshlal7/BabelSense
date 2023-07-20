@@ -18,7 +18,7 @@ Once the BabelSense Python program completes its parsing process and extracts th
 
 To install the program in your system first clone the repository, running the following command in the cmd:
 ```
-git clone https://github.com/youneshlal7/babel-image-archives-noise-or-not.git
+git clone https://github.com/youneshlal7/BabelSense.git
 ```
 then change the directory to the folder where the code exists
 ```

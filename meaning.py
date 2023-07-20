@@ -72,7 +72,7 @@ if __name__ == '__main__':
 	with open("hexagons_done.txt","r") as filename:
 		already_completed = [ele.replace("\n","") for ele in filename.readlines()]
 
-	combinations = [ "".join(element) for element in itertools.product(list(string.ascii_lowercase+string.digits), repeat=1)]#Modify the given digit for example 2 to any number that you like to achieve your desired combinations.
+	combinations = [ "".join(element) for element in itertools.product(list(string.ascii_lowercase+string.digits), repeat=2)]#Modify the given digit for example 2 to any number that you like to achieve your desired combinations.
 	locations = sorted(list(set(combinations)-set(already_completed)))
 	pool = Pool(5) #The number 5 represents the number of processes. Modify the number depending on your machine. If left empty, it will utilize the entirety of available cores, but I recommend leaving at least 4 cores for your system.
 	for location in locations:

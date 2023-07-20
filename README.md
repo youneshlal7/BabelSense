@@ -13,3 +13,26 @@ To determine if a page contains meaningful content, we employ a [gibberish detec
 Performance was a priority during development, and the program takes advantage of parallel processing by running five instances simultaneously (you can adjust this based on your machine's core count in line 77 of 'meaning.py'). Each instance processes a hexagon with 44 threads, effectively increasing the number of URLs parsed concurrently (you can modify the thread count in line 62 of 'meaning.py').
 
 Once the BabelSense Python program completes its parsing process and extracts the relevant content from each hexagon, the program records the location of each processed hexagon in the 'hexagons_done.txt' file. This ensures that during the next run of the program, previously processed hexagons won't be repeated, avoiding duplication of effort. By maintaining this log, BabelSense optimizes the retrieval process and ensures a more efficient exploration of the Library of Babel, focusing solely on the remaining unexplored hexagons in subsequent runs.
+
+# How To install and use:
+
+To install the program in your system first clone the repository, running the following command in the cmd:
+```
+git clone https://github.com/youneshlal7/babel-image-archives-noise-or-not.git
+```
+then change the directory to the folder where the code exists
+```
+cd BabelSense
+```
+after that install the requirements to run the script
+```
+pip install -r requirements.txt
+```
+Change the number that exists after repeat in the line 75 of 'meaning.py' to match the combination of locations you desire, it is now at a value of repeat=2 which means its from aa to 99, after that you could simply run the program using the following command:
+```
+python meaning.py
+```
+
+# Join the Quest
+
+We invite you to join our captivating quest in the pursuit of meaningful pages hidden within the enigmatic Library of Babel. By running our Python program, BabelSense, you become an explorer of literature's infinite landscape, delving into the boundless possibilities contained in each hexagon. Unravel the mysteries of this fascinating universe, where every page holds a potential treasure of knowledge and wisdom. With BabelSense as your guide, we embark on a collective journey to decipher the profound narratives and uncover the profound secrets concealed in the library's depths. Let us band together as seekers of meaning and unlock the extraordinary revelations that await us within the Library of Babel.

@@ -42,7 +42,7 @@ def main(location):
 							page = soup.find('pre',{"id":"textblock"}).text
 							break
 						else:
-							pass
+							continue
 				else:
 					soup = BeautifulSoup(s.content, "html.parser")
 					page = soup.find('pre',{"id":"textblock"}).text
